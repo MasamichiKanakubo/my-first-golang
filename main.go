@@ -11,7 +11,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
     // /helloエンドポイントにhelloHandler関数を登録
-    http.HandleFunc("/hello", helloHandler)
+    http.HandleFunc("/", helloHandler)
 
     // サーバーをポート8080で起動
     fmt.Println("Starting server at port 8080")
